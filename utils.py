@@ -13,8 +13,7 @@ def generate_xiaohongshu(theme, key):
         ("user", user_template_txt)
     ])
     model = ChatOpenAI(model="gpt-3.5-turbo",
-                       api_key=key,
-                       base_url="https://api.aigc369.com/v1"
+                       api_key=key
                        )
 # xiaohongshu_model
     class Xiaohongshu(BaseModel):
